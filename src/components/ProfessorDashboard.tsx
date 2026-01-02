@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useCourses } from '../contexts/CoursesContext';
-import { Course, Question } from '../types';
+import { Question } from '../types';
 import './ProfessorDashboard.css';
 
 const ProfessorDashboard: React.FC = () => {
@@ -9,7 +9,6 @@ const ProfessorDashboard: React.FC = () => {
   const {
     courses,
     exams,
-    submissions,
     students,
     createCourse,
     addLesson,
